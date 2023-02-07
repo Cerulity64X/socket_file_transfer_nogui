@@ -4,11 +4,11 @@ use clap::Parser;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct SftnArgs {
-    #[arg(short, long)]
+    #[arg(short)]
     addr: SocketAddr,
-    #[arg(short, long)]
+    #[arg(short)]
     fname: String,
-    #[arg(short, long, action, help = "The sending program must be ran before the receiving one.")]
+    #[arg(short, action, help = "Send flag. Specifies whether the instance is a sender or receiver. The sending program must be ran before the receiving one.")]
     send: bool
 }
 
