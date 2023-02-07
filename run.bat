@@ -1,0 +1,1 @@
+cargo build && .\target\debug\socket_file_transfer_nogui.exe %*
